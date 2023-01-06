@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="coreNeedle">
+  <link
+    name="needleCN">
+    <inertial>
+      <origin
+        xyz="-7.3377E-06 0.00014562 -0.085515"
+        rpy="0 0 0" />
+      <mass
+        value="0.059056" />
+      <inertia
+        ixx="0.00010942"
+        ixy="-5.1794E-10"
+        ixz="-5.5989E-11"
+        iyy="0.00010947"
+        iyz="-5.4832E-07"
+        izz="3.9519E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coreNeedle/meshes/needleCN.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://coreNeedle/meshes/needleCN.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="needleTipo1">
+  <link
+    name="needleBody">
+    <inertial>
+      <origin
+        xyz="9.2519E-12 4.5308E-09 -0.029936"
+        rpy="0 0 0" />
+      <mass
+        value="0.0099487" />
+      <inertia
+        ixx="3.497E-06"
+        ixy="1.8157E-17"
+        ixz="-8.6895E-15"
+        iyy="3.497E-06"
+        iyz="-4.9062E-12"
+        izz="3.028E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://needleTipo1/meshes/needleBody.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://needleTipo1/meshes/needleBody.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
