@@ -7,7 +7,7 @@ Resources and extra documentation for the manuscript "Needle Placement for Robot
 1. **Python**: For a geometrical model of woman breast and basic dimensions for a breast holder device         
 2. **Matlab**: 
     > **Matlab files**: Scripts for robot modeling (forward and inverse kinematics), breast modeling, trajectory generation, a collision-free path algorithm and multiple simulation.  
-    > **Simulink files**: For implementing a robot-assisted biopsy environment based on *Simscape* and *Stateflow-Flowcharts*.  
+    > **Simulink files**: For implementing a robot-assisted biopsy environment based on *Simscape* and *Stateflow-Flowcharts*.  Simulation settings: Ode23t Solver.  
     > **App files**: For designing a Graphical User Interface for setting the basic configurations of a robot-assisted needle placement before a complete simulation.
 3. **R**: For a statistical analysis and curves plotting.
 
@@ -31,5 +31,5 @@ Resources and extra documentation for the manuscript "Needle Placement for Robot
   <img src="ReadmeFiles\breastHolders.png" width="400"/>
   <img src="ReadmeFiles\robotJoinLimits.png" width="350"/>
   <img src="ReadmeFiles\insertionSelection1.gif" width="450"/>
-  <img src="ReadmeFiles\biopsySimulation.gif" width="400"/>
+  <img src="ReadmeFiles\biopsySimulation.gif" width="450"/>
 </div>
