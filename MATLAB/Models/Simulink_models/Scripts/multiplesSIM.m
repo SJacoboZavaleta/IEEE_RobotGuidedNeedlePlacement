@@ -235,9 +235,9 @@ for x=1:1
        
         %% Saving to excel-> Reporting data
         if needleType == 1
-            nameExcel = mainPath+"\Simulink_models\Results\simulationForth"+cupSize+"_FNA"+".xls";
+            nameExcel = mainPath+"\Simulink_models\Results\simulation"+cupSize+"_FNA"+".xls";
         else
-            nameExcel = mainPath+"\Simulink_models\Results\simulationForth"+cupSize+"_CN"+".xls";
+            nameExcel = mainPath+"\Simulink_models\Results\simulation"+cupSize+"_CN"+".xls";
         end
         
         %writetable(t1,nameExcel,'Sheet',1,'WriteRowNames',true);%Uncomment if needed

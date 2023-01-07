@@ -33,3 +33,17 @@ Resources and extra documentation for the manuscript "Needle Placement for Robot
   <img src="ReadmeFiles\insertionSelection1.gif" width="450"/>
   <img src="ReadmeFiles\biopsySimulation.gif" width="450"/>
 </div>
+
+## Instructions for running the GUI
+1. Run `startup.m` to add all paths to Matlab and run without problems
+2. Go to `Simulink_models\GUI\` and run `biopsyControl.mlapp` to open the application.
+3. The GUI lets you select randoms biopsy targets, define needle insertion avoiding collisions, generate robot trajectory and save all data in order to simulate a particular biopsy case in Simulink.
+   > The application use is interactively easy to follow. The bottoms were sequentially ordered according to: Get biopsy target, define needle insertion, set needle device, generate robot trajectory for the preplacement stage, save data, reload model Simulink variables, simulate and get errors report.
+  
+4. This robot environment in Simulink can be opened in the option `Open Model` inside the third tab (`Postplacement stage`) or directly by going to `Simulink_models\SIM\breastBiopsyApp.slx`. Then, playing the option `Simulate` to initialize and showing a visual simulation window (based on Simscape multibody toolbox).  
+   > **NOTE** When opening the `breastBiopsyApp.slx` directly without running the application before, there will be a warning message about a failed load of model workspace variables. To avoid this, run all the application steps to create the correct file `simulinkWorkSpace.mat` and reload all needed model variables. Finally, go to `Model Explorer -> Model Hierarchy -> breastBiopsyApp -> Model Workspcae -> Workspace data`in Simulink, browse for the `simulinkWorkSpace.mat` file and save the model. This will eliminate the warning message, and the `breastBiopsyApp.slx` model can also be able to run with the previous loaded variables any time.
+
+## Instructions for running a multiple simulation
+1. Open the `multiplesSIM.mat` and run.
+2. The results will be saved in `Simulink_models\Results\` in Excel files (i.e. `simulationA_FNA` was created by simulating a breast holder of A-size cup and a fine needle). 
+    > The Simulink file associated to `multiplesSIM.mat` is `breastBiopsyMulti.slx` and always run in second plane. Therefore, there will be not a visual simulation. However, this could be modified.
