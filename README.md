@@ -12,9 +12,9 @@ Resources and extra documentation for the manuscript "Needle Placement for Robot
 3. **R**: For a statistical analysis and curves plotting.
 
 ## Requirements
-- Matlab 2020b or later
-  - Additional package: [Robotics Toolbox for MATLAB](https://petercorke.com/toolboxes/robotics-toolbox/) from Peter Corke.
-  - New user package.
+- Matlab 2020b or later. All additional packages (only needed coded) were uploaded in this repository. 
+  - [Robotics Toolbox for MATLAB or RVC](https://petercorke.com/toolboxes/robotics-toolbox/) from *Robotics, Vision and Control Fundamental algorithms in MATLAB: Second Edition* by Peter Corke.
+  - [Modern robotics toolbox](https://github.com/NxRLab/ModernRobotics) from *Modern Robotics: Mechanics, Planning, and Control* (Kevin Lynch and Frank Park, Cambridge University Press 2017 and 2019).
 - Python 9.6
 - R 2.1 or later
 - **Optional**. Solidworks 2019 for CAD modeling and exporting files into Matlab
