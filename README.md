@@ -27,7 +27,7 @@ Resources and extra documentation for the manuscript "Needle Placement for Robot
       4. Results. Outputs for multiple simulation (`.xls` files) and target biopsy points for each breast-cup size (`.mat`) 
       5. Scripts. For computing multiple simulations (`.m`) and biopsy targets samplings (`.m`) based on factorial-method design. 
       6. SIM. Simulation models (`.slx`) for GUI application and multiple simulation.
-   6. **work**.
+   6. **work**. For simulation cache in Simulink. 
 3. **R\SimulationAnalysis**. For a statistical analysis and curves plotting.
 4. **ProjectImages**. Some manuscript images, figures and animation for the `README.m` file.
 
