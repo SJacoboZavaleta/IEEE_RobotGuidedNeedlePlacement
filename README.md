@@ -67,3 +67,5 @@ Resources and extra documentation for the manuscript "Needle Placement for Robot
 1. Open the `multiplesSIM.mat` and run.
 2. The results will be saved in `Simulink_models\Results\` in Excel files (i.e. `simulationA_FNA` was created by simulating a breast holder of A-size cup and a fine needle). 
     > The Simulink file associated to `multiplesSIM.mat` is `breastBiopsyMulti.slx` and always run in second plane. Therefore, there will be not a visual simulation. However, this could be modified.
+
+The same repository can be found on [GitLab](https://gitlab.com/SJacoboZavaleta/IEEE_RobotGuidedNeedlePlacement).
