@@ -1,15 +1,35 @@
 # Code for Modeling, Simulation, GUI and Statistical Analysis of a Robot-guided Needle Placement
 
-![Graphical abstract](/ReadmeFiles/GraphicalAbstract.png)
+![Graphical abstract](/ProjectImages/GraphicalAbstract.png)
 
-Resources and extra documentation for the manuscript "Needle Placement for Robot-assisted 3D Ultrasound-guided Breast Biopsy: A Preliminary Study" published in IEEE Latin America Transactions. The code is organized by the type of programming language used in the project in the following order `Python -> Matlab -> R`. The folder's description is as follows
+Resources and extra documentation for the manuscript "Needle Placement for Robot-assisted 3D Ultrasound-guided Breast Biopsy: A Preliminary Study" published in IEEE Latin America Transactions. The code is organized by the type of programming language used in the project in the following order `Python -> Matlab -> R`. The project hierarchy and folders description is as follows
 
-1. **Python**: For a geometrical model of woman breast and basic dimensions for a breast holder device         
-2. **Matlab**: 
-    > **Matlab files**: Scripts for robot modeling (forward and inverse kinematics), breast modeling, trajectory generation, a collision-free path algorithm and multiple simulation.  
-    > **Simulink files**: For implementing a robot-assisted biopsy environment based on *Simscape* and *Stateflow-Flowcharts*.  Simulation settings: Ode23t Solver.  
-    > **App files**: For designing a Graphical User Interface for setting the basic configurations of a robot-assisted needle placement before a complete simulation.
-3. **R**: For a statistical analysis and curves plotting.
+1. **PYTHON\BreastDimension**: For a geometrical model of woman breast and basic dimensions for a breast holder device         
+2. **MATLAB\Models**:
+   1. `getRootDirectory.m`. Script for loading current working directory.
+   2. `startup.m`. Script for adding all folder paths to Matlab. 
+   3. **CAD_models**:
+      1. Breast. Breast models for A, B, and C-cup sizes.
+      2. Devices. Needle devices for core and fine needle biopsies.
+   4. **Matlab_models**. Scripts for robot modeling (forward and inverse kinematics), breast modeling, trajectory generation, a collision-free path algorithm and multiple simulation.
+      1. Data: Trajectory data for joint trajectory testing.
+      2. RoboticsToolbox:
+         1. ForApp. Function scripts for implementing the GUI application.
+         2. ForMatlab. Function scripts for all Matlab-based simulations.
+         3. ForSimulink. Functions script for all Simulink-based simulations.
+         4. ModernRobotics. Based on Modern robotics toolbox by Kevin Lynch and Frank Park.
+         5. rvctools. Robotics Toolbox for MATLAB or RVC by Peter Corke.
+      3. Test
+   5. **Simulink_models**. For implementing a robot-assisted biopsy environment based on *Simscape* and *Stateflow-Flowcharts*.  Simulation settings: Ode23t Solver.
+      1. Data. `.mat` files for the GUI application, target biopsy points, breast holder models, Finite element breast models, breast dimensions, robot dimensions, robot kinematics, end effector waypoints and Simulink model workspace.      
+      2. Extra. Figures for GUI application.
+      3. GUI. For designing a Graphical User Interface (GUI) for setting the basic configurations of a robot-assisted needle placement before a complete simulation (`.mlapp`).
+      4. Results. Outputs for multiple simulation (`.xls` files) and target biopsy points for each breast-cup size (`.mat`) 
+      5. Scripts. For computing multiple simulations (`.m`) and biopsy targets samplings (`.m`) based on factorial-method design. 
+      6. SIM. Simulation models (`.slx`) for GUI application and multiple simulation.
+   6. **work**.
+3. **R\SimulationAnalysis**. For a statistical analysis and curves plotting.
+4. **ProjectImages**. Some manuscript images, figures and animation for the `README.m` file.
 
 ## Requirements
 - Matlab 2020b or later. All additional packages (only needed codes) were uploaded in this repository. 
@@ -22,16 +42,16 @@ Resources and extra documentation for the manuscript "Needle Placement for Robot
 ## Screenshots
 
 <div id="header" align="center">
-  <img src="ReadmeFiles\holderConcept.png" width="400"/>
-  <img src="ReadmeFiles\breastAHolderProfile.png" width="400"/>
+  <img src="ProjectImages\holderConcept.png" width="400"/>
+  <img src="ProjectImages\breastAHolderProfile.png" width="400"/>
 </div>
 
 <div id="header" align="center">
-  <img src="ReadmeFiles\breastWorkspace.png" width="400"/>
-  <img src="ReadmeFiles\breastHolders.png" width="400"/>
-  <img src="ReadmeFiles\robotJoinLimits.png" width="350"/>
-  <img src="ReadmeFiles\insertionSelection1.gif" width="450"/>
-  <img src="ReadmeFiles\biopsySimulation.gif" width="450"/>
+  <img src="ProjectImages\breastWorkspace.png" width="400"/>
+  <img src="ProjectImages\breastHolders.png" width="400"/>
+  <img src="ProjectImages\robotJoinLimits.png" width="350"/>
+  <img src="ProjectImages\insertionSelection1.gif" width="450"/>
+  <img src="ProjectImages\biopsySimulation.gif" width="450"/>
 </div>
 
 ## Instructions for running the GUI

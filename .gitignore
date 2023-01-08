@@ -37,3 +37,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Extra files and folders
+.vscode/
+.venv/
+.idea/
+venv/
